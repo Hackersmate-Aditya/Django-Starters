@@ -30,7 +30,7 @@ class QuestionSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-    '''def validate(self, attrs):
+       def validate(self, attrs):
         errors = list()
 
         if attrs['pub_date'] > datetime.datetime.now(attrs['pub_date'].tzinfo):
@@ -42,4 +42,4 @@ class QuestionSerializer(serializers.ModelSerializer):
         if attrs.__len__() > 0:
             raise serializers.ValidationError(' _###_ '.join(x for x in errors))
 
-        return attrs'''
+        return attrs
