@@ -6,7 +6,7 @@ import datetime
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField()
-
+                                                                               #our 2 models question and choice
 
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
