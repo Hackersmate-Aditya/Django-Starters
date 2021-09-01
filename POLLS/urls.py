@@ -3,7 +3,7 @@ from django.urls import path
 
 from . import views
 
-urlpatterns = [
+urlpatterns = [                                                                       #all paths here
     path('choices', views.ChoiceView.as_view()),
     path('questions', views.QuestionView.as_view()),
     path('questions/<int:id>', views.QuestionByPK.as_view()),
